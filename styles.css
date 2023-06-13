@@ -1,0 +1,30 @@
+:root {
+    --gradient: linear-gradient(109.6deg, rgba(247, 253, 166, 1) 11.2%, rgba(128, 255, 221, 1) 57.8%, rgba(255, 128, 249, 1) 85.9%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #eaeaea;
+    background-image: var(--gradient);
+    background-size: 300%;
+    animation: gradient-animation 3s infinite alternate;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+
+    }
+}
